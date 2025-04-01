@@ -1,4 +1,5 @@
 .box {
+  margin-top: 10px;
   border: 1px solid black;
   width: 500px;
   text-align: center;
@@ -9,4 +10,17 @@
 .main {
   display: flex;
   justify-content: center;
+}
+.main button {
+  margin: 10px;
+}
+
+.win {
+  border: 10px solid green;
+}
+.lose {
+  border: 10px solid red;
+}
+.draw {
+  border: 10px solid black;
 }
