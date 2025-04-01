@@ -21,7 +21,7 @@ const choice = {
   },
   scissors:{
     name: "Scissors",
-    image: "https://media.geeksforgeeks.org/wp-content/uploads/20210705223721/scissor.jpeg"
+    image: "https://static.thenounproject.com/png/341563-200.png"
   },
   paper:{
     name: "Paper",
@@ -75,9 +75,15 @@ function App() {
         <Box title="Computer" item={computerSelect} result={result}/>
       </div>
       <div className="main">
-        <button onClick={() => play("scissors")}>Scissors</button>
-        <button onClick={() => play("rock")}>Rock</button>
-        <button onClick={() => play("paper")}>Paper</button>
+        <button onClick={() => play("scissors")}>
+          <img className='button-image' src={choice.scissors.image} alt="scissors"/>
+        </button>
+        <button onClick={() => play("rock")}>
+        <img className='button-image' src={choice.rock.image} alt="rock"/>
+        </button>
+        <button onClick={() => play("paper")}>
+        <img className='button-image' src={choice.paper.image} alt="paper"/>
+        </button>
       </div>
     </div>
   );
